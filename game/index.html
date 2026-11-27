@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sky Courier: Ridge Run</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  html, body { margin: 0; padding: 0; background: #141a26; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #game { width: 1280px; height: 720px; max-width: 100vw; max-height: 100vh; }
+  #status {
+    position: absolute; left: -9999px; top: -9999px;
+    width: 1px; height: 1px; overflow: hidden;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<p id="status" aria-live="polite">Loading Sky Courier: Ridge Run…</p>
+<script type="module">
+  import { createGame } from './src/main.js';
+  createGame(document.getElementById('game'), document.getElementById('status'));
+</script>
+</body>
+</html>

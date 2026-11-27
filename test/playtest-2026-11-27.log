@@ -1,0 +1,26 @@
+PASS  frame loop advances in real time — elapsed 2.20 -> 3.22
+PASS  title screen shown
+PASS  bad ?shot= does not crash page — play
+PASS  empty ?seed= loads title
+PASS  odd keys harmless on title
+PASS  Space starts the run — keys seen by page: 3, screen: play
+PASS  heading is the leg bearing at level flight — GREEN VALLEY — Thread 6 rings — learn the plane. Altitude 492 ft, speed 173 kt, heading 008°. Next ring 388 m. Score 0.
+PASS  plane advances and accelerates — z 34 -> 322, speed 238 kt
+PASS  steering banks the plane — bank L -0.61 R 0.62
+PASS  banking swings the heading off the course — heading 20° (course 008°)
+PASS  NOS boosts speed and drains — speed 494 kt, nos 100 -> 61
+PASS  ring scores — rings 0 -> 1, score 0 -> 100, banner "RING! +100  ·  STREAK 1  ·  MULT x1"
+PASS  missed ring breaks streak — MISSED RING — STREAK LOST
+PASS  P pauses
+PASS  P resumes
+PASS  ground crash costs a life and respawns — KESTREL DOWN — FLY AGAIN
+PASS  R restarts the run
+PASS  landing grades PERFECT — {"screen":"over","reason":"landed","landing":{"tier":"PERFECT","bonus":900},"score":3185}
+PASS  Space restarts from game-over
+PASS  overshoot ends the run
+PASS  timeout ends the run
+PASS  fuel-out crash ends the run — {"screen":"over","reason":"fuel"}
+PASS  best score saved to localStorage — best 3185
+PASS  no page exceptions or console errors
+
+24/24 checks passed
